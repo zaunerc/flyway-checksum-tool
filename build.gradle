@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'net.nllk'
+
+sourceCompatibility = 1.11
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'net.nllk.flywaychecksumtool.FlywayChecksumTool'
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
